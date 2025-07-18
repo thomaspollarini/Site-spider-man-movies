@@ -1,0 +1,18 @@
+@import url('/assets/css/reset.css');
+@import url('/assets/css/global.css');
+
+.gallery {
+  padding: 1.25rem;
+  padding-left: 0;
+}
+
+.gallery ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.gallery img {
+  border: solid 6px white;
+  border-radius: 1rem;
+}
