@@ -1,0 +1,49 @@
+
+.navigator {
+  height: 80svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.navigator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  z-index: 0;
+}
+
+.navigator__icon {
+  position: absolute;
+  top: -20px;
+}
+
+.navigator__list {
+  display: flex;
+  gap: 3.75rem;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.navigator__item {
+  color: white;
+  border: solid 2px white;
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigator__item:hover,
+.navigator__item:active {
+  background-color: white;
+  color: var(--primary-color);
+}
