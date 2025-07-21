@@ -49,3 +49,8 @@
   background-color: white;
   color: var(--primary-color);
 }
+
+.navigator__item--active {
+  background-color: var(--primary-color);
+  color: white;
+}
