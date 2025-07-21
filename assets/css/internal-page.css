@@ -1,0 +1,113 @@
+@import url(/assets/css/reset.css);
+@import url(/assets/css/global.css);
+@import url(/assets/css/components/_navigator.css);
+@import url('/assets/css/components/_pills.css');
+@import url('/assets/css/components/_link-button.css');
+@import url('/assets/css/components/_gallery.css');
+
+.s-wrapper {
+  display: flex;
+  height: 100svh;
+  flex-flow: row nowrap;
+}
+
+.s-wrapper__column {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.s-wrapper__content {
+  height: 100%;
+  width: 100%;
+  padding-left: 8.125rem;
+  background-color: gray;
+}
+
+.s-content {
+  height: 80svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.s-content__logo {
+  margin: 3.125rem 0 1.875rem;
+}
+
+.s-content__description {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 50%;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+.s-content__description .pills {
+  margin-bottom: 1.25rem;
+}
+
+.s-content__text {
+  color: white;
+  line-height: 1.7;
+}
+
+.s-content__links {
+    align-self: flex-start;
+    padding: 1.25rem;
+}
+
+.s-gallery-container {
+  height: 20svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* BACKGROUNDS */
+
+.s-spiderman_01-01 {
+  background-image: url('../images/spiderman-tobey/movie-01/background.png');
+  background-size: cover;
+}
+
+.s-spiderman_01-02 {
+  background-image: url('../images/spiderman-tobey/movie-02/background.png');
+  background-size: cover;
+}
+
+.s-spiderman_01-03 {
+  background-image: url('../images/spiderman-tobey/movie-03/background.png');
+  background-size: cover;
+}
+
+.s-spiderman_02-01 {
+  background-image: url('../images/spiderman-andrew/movie-01/background.png');
+  background-size: cover;
+}
+
+.s-spiderman_02-02 {
+  background-image: url('../images/spiderman-andrew/movie-02/background.png');
+  background-size: cover;
+}
+
+.s-spiderman_03-01 {
+  background-image: url('../images/spiderman-tom/movie-01/background.png');
+  background-size: cover;
+}
+
+.s-spiderman_03-02 {
+  background-image: url('../images/spiderman-tom/movie-02/background.png');
+  background-size: cover;
+}
+
+.s-spiderman_03-03 {
+  background-image: url('../images/spiderman-tom/movie-03/background.png');
+  background-size: cover;
+}
+
