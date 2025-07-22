@@ -1,11 +1,22 @@
 function handleMouseEnter() {
   this.classList.add('s-card--hovered');
   document.body.id = `${this.id}-hovered`;
+
+  const pageNavigation = document.querySelector('.s-menu');
+  const controller = document.querySelector('.s-controller');
+  pageNavigation.style.opacity = '0';
+  controller.style.opacity = '0';
 }
 
 function handleMouseLeave() {
   this.classList.remove('s-card--hovered');
   document.body.id = '';
+
+  const pageNavigation = document.querySelector('.s-menu');
+  const controller = document.querySelector('.s-controller');
+  pageNavigation.style.opacity = '1';
+  controller.style.opacity = '1';
+
 }
 
 function selectCarouselItem(selectedButtonElement) {
