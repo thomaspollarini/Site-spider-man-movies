@@ -1,5 +1,5 @@
-@import url(/assets/css/reset.css);
-@import url(/assets/css/global.css);
+@import url('../reset.css');
+@import url('../global.css');
 
 .navigator {
   height: 80svh;
