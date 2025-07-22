@@ -1,6 +1,3 @@
-@import url('../reset.css');
-@import url('../global.css');
-
 .navigator {
   height: 80svh;
   display: flex;
