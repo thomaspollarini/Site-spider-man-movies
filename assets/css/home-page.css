@@ -22,12 +22,17 @@ body::before {
     width: 100%;
     text-align: center;
     position: relative;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .s-menu__item {
     display: inline-block;
     text-transform: uppercase;
     margin: 0 1.25rem;
+}
+
+.s-menu__item:hover {
+    text-decoration: underline;
 }
 
 .s-menu__icon {
@@ -43,14 +48,35 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    perspective: 3000px;
+}
+
+.s-cards-carousel {
+    display: flex;
+    justify-content: center;
+    width: calc(100svw / 3 - 10%);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
 }
 
 .s-card {
     border: 0.5rem solid white;
-    width: calc(100%/3 - 8%);
+    width: 100%;
     height: 70svh;
-    position: relative;
+    position: absolute;
     transition: filter 0.5s ease-in-out;
+}
+
+.s-card:nth-child(1) {
+    transform: rotateY(0deg) translateZ(50svw);
+}
+
+.s-card:nth-child(2) {
+    transform: rotateY(120deg) translateZ(50svw);
+}
+
+.s-card:nth-child(3) {
+    transform: rotateY(240deg) translateZ(50svw);
 }
 
 .s-card__background {
@@ -117,12 +143,15 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
 
 /* CONTROLLER */
 .s-controller {
-    position: relative;
+    position: absolute;
+    bottom: 1.5rem;
     display: flex;
     gap: 3.75rem;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem
+    margin-top: 3rem;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .s-controller__button {
@@ -146,6 +175,13 @@ body[id^="spider-man-"] .s-card:not(.s-card--hovered) {
     background-color: white;
     color: var(--primary-color);
     transform: scale(1.1);
+}
+
+.s-controller__button--active {
+    background-color: white;
+    color: var(--primary-color);
+    border: solid 3px var(--primary-color);
+    outline: solid 3px white;
 }
 
 .s-controller__line {
