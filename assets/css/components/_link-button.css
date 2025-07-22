@@ -6,14 +6,16 @@ a.link-button {
   align-items: center;
   justify-content: center;
   color: white;
+  border: solid 3px white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
 }
 
 a.link-button .icon {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0.20rem;
   background-color: var(--primary-color);
-  border: solid 1px white;
   background-clip: content-box;
   border-radius: 50%;
   position: relative;
@@ -23,7 +25,7 @@ a.link-button .icon {
 }
 
 a.link-button .icon .play-icon {
-  border: solid 7px white;
+  border: solid 9px white;
   width: 0;
   height: 0;
   border-top-color: transparent;
@@ -34,4 +36,7 @@ a.link-button .icon .play-icon {
 
 a.link-button .label {
   margin-left: 0.625rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  letter-spacing: 0.05rem;
 }

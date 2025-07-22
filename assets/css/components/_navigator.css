@@ -46,11 +46,11 @@
 
 .navigator__item:hover,
 .navigator__item:active {
-  background-color: white;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .navigator__item--active {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: white;
+  color: var(--primary-color);
 }
